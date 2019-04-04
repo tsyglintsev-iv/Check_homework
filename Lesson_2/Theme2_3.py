@@ -11,7 +11,6 @@ r = len(my_list_1)
 
 for i in range(r):
 
-#    print(my_list_1.count(my_list_1[i]), my_list_1[i])
     if my_list_1.count(my_list_1[i]) == 1:
        my_list_2.append(my_list_1[i])
 
