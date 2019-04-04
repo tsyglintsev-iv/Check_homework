@@ -2,10 +2,17 @@
 # -*- coding: utf-8 -*-
 
 #Дан список заполненный произвольными целыми числами.
-
+#Получите новый список, элементами которого будут только уникальные элементы исходного.
 
 my_list_1 = [2, 2, 5, 12, 8, 2, 12]
+my_list_2 = []
 
-my_list = set(my_list_1)
+r = len(my_list_1)
 
-print (my_list)
+for i in range(r):
+
+#    print(my_list_1.count(my_list_1[i]), my_list_1[i])
+    if my_list_1.count(my_list_1[i]) == 1:
+       my_list_2.append(my_list_1[i])
+
+print (my_list_2)
