@@ -10,7 +10,7 @@ r = len(my_list_2)
 
 
 for x in range(r):
-    print ("my_list_2", "[x]" "=", my_list_2[x])
+#    print ("my_list_2", "[x]" "=", my_list_2[x])
 
     i=0
     while i < len(my_list_1):
