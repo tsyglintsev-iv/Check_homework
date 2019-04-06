@@ -6,20 +6,31 @@
 #    health = 100,
 #    damage = 50.
 
+player = "Кузма"
+enemy = "Борис"
 
 users = {
-    "player": {
-        "name": "Maxik",
-        "health": 100,
-        "damage" : 50
+    player: {
+        "name": player,
+        "health": 1000,
+        "damage": 50
     },
-    "enemy": {
-        "name": "Boris",
+    enemy: {
+        "name": enemy,
         "health": 100,
-        "skype": 50
+        "damage": 50
     }
 }
 
 
+def fight(attacker, defender):
+    defender["health"] = round(defender["health"] - attacker["damage"])
+    print('Сущность {} атаковал {}a и оставил ему {} здоровья'.format(attacker['name'], defender['name'],
+                                                                      defender['health']))
+    # print(defender["health"])
 
-print(users["player"])
+
+fight(users[player], users[enemy])
+# print(users)
+fight(users[enemy], users[player])
+# print(users)
