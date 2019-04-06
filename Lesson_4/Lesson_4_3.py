@@ -24,7 +24,7 @@ users = {
 
 
 def fight(attacker, defender):
-    defender["health"] = round(defender["health"] - attacker["damage"])
+    defender["health"] = (defender["health"] - attacker["damage"])
     print('Сущность {} атаковал {}a и оставил ему {} здоровья'.format(attacker['name'], defender['name'],
                                                                       defender['health']))
     # print(defender["health"])
