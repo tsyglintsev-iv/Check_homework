@@ -24,11 +24,11 @@ users = {
         "armor" : 1.99
     }
 }
-
+#Вычисляем урон с учётом брони
 def armoring (damage, armor):
     return (damage / armor)
 
-
+#Вычисляем оставшееся здоровье сущности
 def fight(attacker, defender):
     defender["health"] = round (defender["health"] - armoring(attacker["damage"], defender["armor"]) )
     print('{} атаковал {} и оставил ему {} здоровья'.format(attacker['name'], defender['name'], defender['health']))
