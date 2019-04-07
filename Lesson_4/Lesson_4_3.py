@@ -6,7 +6,7 @@
 #    health = 100,
 #    damage = 50.
 
-player = "Кузма"
+player = "Кузьма"
 enemy = "Борис"
 
 users = {
@@ -25,7 +25,7 @@ users = {
 
 def fight(attacker, defender):
     defender["health"] = (defender["health"] - attacker["damage"])
-    print('Сущность {} атаковал {}a и оставил ему {} здоровья'.format(attacker['name'], defender['name'],
+    print('{} атаковал {} и оставил ему {} здоровья'.format(attacker['name'], defender['name'],
                                                                       defender['health']))
     # print(defender["health"])
 
